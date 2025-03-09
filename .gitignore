@@ -34,6 +34,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# sqlite
+*.sqlite
+
+# drizzle
+/drizzle
+
 **/*.trace
 **/*.zip
 **/*.tar.gz
