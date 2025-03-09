@@ -6,6 +6,9 @@ import { db } from "./database/db";
 
 // plugins
 import { status } from "./plugins/status";
+import { users } from "./plugins/users";
+
+db.$connect();
 
 const app = new Elysia()
   .use(swagger())
@@ -16,6 +19,7 @@ const app = new Elysia()
     });
   })
   .use(status)
+  .use(users)
   .listen(3000);
 
 console.log(

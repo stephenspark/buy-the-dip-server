@@ -7,16 +7,12 @@
   },
   "dependencies": {
     "@elysiajs/swagger": "^1.2.2",
-    "drizzle-orm": "^0.40.0",
-    "drizzle-typebox": "^0.3.0",
+    "@prisma/client": "^6.4.1",
     "elysia": "latest"
   },
   "devDependencies": {
     "@types/bun": "^1.2.4",
-    "drizzle-kit": "^0.30.5"
-  },
-  "override": {
-    "@sinclair/typebox": "^0.34.27"
+    "prisma": "^6.4.1"
   },
   "module": "src/index.js"
 }

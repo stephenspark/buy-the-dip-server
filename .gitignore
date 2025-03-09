@@ -35,10 +35,8 @@ yarn-error.log*
 .vercel
 
 # sqlite
-*.sqlite
-
-# drizzle
-/drizzle
+*.db
+*.db-journal
 
 **/*.trace
 **/*.zip
