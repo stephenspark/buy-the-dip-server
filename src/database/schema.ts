@@ -1,6 +1,6 @@
 import { sqliteTable, integer, text } from "drizzle-orm/sqlite-core";
 
-export const user = sqliteTable("user", {
+export const users = sqliteTable("users", {
   id: integer("id").primaryKey(),
   username: text("username").notNull(),
   password: text("password").notNull(),
@@ -9,7 +9,7 @@ export const user = sqliteTable("user", {
 });
 
 export const table = {
-  user,
+  users,
 } as const;
 
 export type Table = typeof table;
